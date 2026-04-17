@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>St. Raphael</title>
+</head>
+ <body >
+        <img src="ST. RAPHAEL BADGE.PNG" alt="School Badge" width="100">
+
+    <table width="90%" align="center" cellpadding="10" cellspacing="0">
+        <tr>
+            <td>
+
+                <!-- ========== HEADER ========== -->
+                <table width="100%"  cellpadding="10"> 
+                    <tr>
+                            <td align="center">
+                                <font  
+                                    size="6"><b>St. Raphael Learning Center</b></font><br>
+                            <font size="4"><i>Toil And Achieve</i></font>
+                        </td>
+                    </tr>
+                </table>
+
+</html>
