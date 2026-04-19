@@ -1,26 +1,262 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
- <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>St. Raphael</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>St. Raphael Learning Center</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f0f2f5;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* Header */
+        .header {
+            background-color: #003399; /* Dark blue */
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+
+        .header-content {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .badge {
+            width: 100px;
+            height: auto;
+            border-radius: 50%;
+            border: 3px solid white;
+        }
+
+        .school-name h1 {
+            font-size: 2.5rem;
+            margin-bottom: 5px;
+        }
+
+        .school-name p {
+            font-size: 1.2rem;
+            font-style: italic;
+        }
+
+        /* Navigation */
+        .nav {
+            background-color: #cc0000; /* Red */
+            padding: 12px 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+        }
+
+        .nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.1rem;
+            padding: 5px 10px;
+            transition: background 0.3s;
+        }
+
+        .nav a:hover {
+            background-color: #990000;
+            border-radius: 5px;
+        }
+
+        /* Container */
+        .container {
+            max-width: 1200px;
+            margin: 30px auto;
+            padding: 0 20px;
+        }
+
+        /* Main content (two columns) */
+        .main-content {
+            display: flex;
+            gap: 30px;
+            flex-wrap: wrap;
+        }
+
+        .welcome {
+            flex: 2;
+            background: white;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            border-left: 5px solid #cc0000;
+        }
+
+        .sidebar {
+            flex: 1;
+            background: #fff9e6;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            border-top: 5px solid #003399;
+        }
+
+        .welcome h2, .sidebar h3 {
+            color: #003399;
+            margin-bottom: 15px;
+        }
+
+        .sidebar h3 {
+            color: #cc0000;
+        }
+
+        .mission {
+            background-color: #e6f0ff;
+            padding: 20px;
+            margin-top: 30px;
+            border-radius: 10px;
+            border-left: 5px solid #003399;
+            font-style: italic;
+        }
+
+        .events-list, .links-list {
+            list-style: none;
+            margin-top: 10px;
+        }
+
+        .events-list li, .links-list li {
+            margin-bottom: 12px;
+            padding-left: 20px;
+            position: relative;
+        }
+
+        .events-list li::before {
+            content: "📅";
+            position: absolute;
+            left: 0;
+        }
+
+        .links-list li::before {
+            content: "🔗";
+            position: absolute;
+            left: 0;
+        }
+
+        .links-list a {
+            color: #003399;
+            text-decoration: none;
+        }
+
+        .links-list a:hover {
+            text-decoration: underline;
+            color: #cc0000;
+        }
+
+        /* Footer */
+        .footer {
+            background-color: #003399;
+            color: white;
+            text-align: center;
+            padding: 25px;
+            margin-top: 40px;
+        }
+
+        .footer p {
+            margin: 5px 0;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .school-name h1 {
+                font-size: 1.8rem;
+            }
+            .nav ul {
+                gap: 15px;
+            }
+        }
+    </style>
 </head>
- <body >
-        <img src="ST. RAPHAEL BADGE.PNG" alt="School Badge" width="100">
+<body>
 
-    <table width="90%" align="center" cellpadding="10" cellspacing="0">
-        <tr>
-            <td>
+    <!-- Header -->
+    <div class="header">
+        <div class="header-content">
+            <img src="badge.png" alt="School Badge" class="badge">
+            <div class="school-name">
+                <h1>St. Raphael Learning Center</h1>
+                <p>Toil And Achieve</p>
+            </div>
+        </div>
+    </div>
 
-                <!-- ========== HEADER ========== -->
-                <table width="100%"  cellpadding="10"> 
-                    <tr>
-                            <td align="center">
-                                <font  
-                                    size="6"><b>St. Raphael Learning Center</b></font><br>
-                            <font size="4"><i>Toil And Achieve</i></font>
-                        </td>
-                    </tr>
-                </table>
+    <!-- Navigation -->
+    <div class="nav">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Programs</a></li>
+            <li><a href="#">Admissions</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </div>
+
+    <!-- Main Content -->
+    <div class="container">
+        <div class="main-content">
+            <div class="welcome">
+                <h2>Welcome to St. Raphael</h2>
+                <p>At St. Raphael Learning Center, we are committed to providing a nurturing environment where students can grow academically, socially, and spiritually. Our dedicated staff and comprehensive curriculum ensure that students receive a well-rounded education grounded in faith and excellence.</p>
+                <p>We invite you to explore our website and learn more about our programs, admissions process, and the vibrant community that makes our school special.</p>
+            </div>
+            <div class="sidebar">
+                <h3>Upcoming Events</h3>
+                <ul class="events-list">
+                    <li><strong>March 15:</strong> Reporting for second term</li>
+                    <li><strong>March 20:</strong> Examinations</li>
+                    <li><strong>April 5:</strong> Parent-Teacher Conference</li>
+                    <li><strong>April 12:</strong> Sports Day</li>
+                </ul>
+                <h3 style="margin-top: 25px;">Quick Links</h3>
+                <ul class="links-list">
+                    <li><a href="#">Apply Now</a></li>
+                    <li><a href="#">School Calendar</a></li>
+                    <li><a href="#">Students Portal</a></li>
+                    <li><a href="#">Rules and Regulations</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Mission Statement -->
+        <div class="mission">
+            <p><strong>Mission Statement:</strong> “To inspire a passion for learning, foster respect and responsibility, and develop leaders who will make a positive impact on their communities with compassion.”</p>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        <p>St. Raphael Learning Center | Kamwenge, Uganda</p>
+        <p>Phone: (+256) 772 963 327 | Email: info@straphael.edu</p>
+        <p>© 2025 All Rights Reserved</p>
+    </div>
+
+</body>
+</html>
+
+
+
 
 </html>
